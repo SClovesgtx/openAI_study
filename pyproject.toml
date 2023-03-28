@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "chatbot-with-chatgpt"
+version = "0.1.0"
+description = ""
+authors = ["Cloves Paiva <cloves.paiva@extremedigital.com.br>"]
+readme = "README.md"
+packages = [{include = "chatbot_with_chatgpt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.27.2"
+gradio = "^3.23.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
