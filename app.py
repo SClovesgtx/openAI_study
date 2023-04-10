@@ -6,11 +6,6 @@ import gradio as gr
 
 openai.api_key = os.getenv("API_KEY")
 
-def read_prompt(prompt_name: str) -> str:
-    with open(f"prompts/{prompt_name}.txt") as file:
-        text = file.read()
-    return text
-
 
 def read_messages(prompt_name: str) -> str:
     with open(f"prompts/{prompt_name}.json") as file:
